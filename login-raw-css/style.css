@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    font-size: 14px;
+    
 }
 .hero{
     height: 100%;
@@ -10,6 +12,7 @@
     background-position: center;
     background-size: cover;
     position: absolute;
+    font-size:15px;
 }
 
 .form-box{
@@ -98,11 +101,12 @@
     margin: 30px 10px 30px 0;
 }
 
-span{
+.span{
     color: #777;
     font-size: 12px;
     bottom: 68px;
     position: absolute;
+    
 }
 #login{
     left: 50px
