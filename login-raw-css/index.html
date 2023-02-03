@@ -1,34 +1,63 @@
 <!DOCTYPE html>
-<html lang="en"></html>
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-        <link rel="stylesheet" href="style.css">
-        <title>Clique</title>
-    </head>
-    <body>  
-        <div class="form-container">
-        <img src="Images/user.png" class="avatar">
-            <form>
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email address</label>
-                    <input placeholder="Email Address" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+<html lang="en">
+<head>
+    <title> Clique - Login </title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn">
                 </div>
-                <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Password</label>
-                    <input placeholder="Password" type="password" class="form-control" id="exampleInputPassword1">
-                    <div> <a href="url">Forgot Password?</a></div>
-                </div>
-                <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Remember Me</label>
-                </div>
-                <div class="login-button"><button type="submit" class="btn btn-primary">Login</button></div>
-                <div> New to Clique? <a href="url">Create Account</a></div>
-            </form>
-        </div>
-    </body>
+                <button type="button" class="toggle-btn" onclick="login()">Login</button>
+                <button type="button" class="toggle-btn" onclick="register()">Sign Up</button>
+            </div>
+            <div class="social-icons">
+                <img src="images/facebook.png">
+                <img src="images/instagram.png">
+                <img src="images/google.png">
+            </div>
+        <form id="login" class="input-group">
+            <input type="text" class="input-field" placeholder="Email or Username"required>
+            <input type="text" class="input-field" placeholder="Password"required>
+            <input type="checkbox" class="checkbox"><span>Remember Me</span>
+            <button type="submit" class="submit-btn">Login</button>
+        </form>
+        <form id="register" class="input-group">
+            <input type="text" class="input-field" placeholder="First name"required>
+            <div>
+            <input type="text" class="input-field" placeholder="Last name"required>
+            </div>
+            <input type="email" class="input-field" placeholder="Username"required>
+            <input type="email" class="input-field" placeholder="Email Address"required>
+            <input type="text" class="input-field" placeholder="Password"required>
+            <input type="email" class="input-field" placeholder="Confirm Password"required>
+            <input type="email" class="input-field" placeholder="Phone Number"required>
+            <input type="checkbox" class="checkbox"><span>I agree to the <a href="url">Terms & Conditions</a></span>
+            <button type="submit" class="submit-btn">Sign Up</button>
+        </form>
+    </div>
+<script>
+    var x=document.getElementById("login");
+    var y=document.getElementById("register");
+    var z=document.getElementById("btn");
+
+    function register(){
+        x.style.left = "-400px";
+        y.style.left = "50px";
+        z.style.left = "110px";
+    }
+    function login(){
+        x.style.left = "50px";
+        y.style.left = "450px";
+        z.style.left = "0px";
+    }
+
+</script>
+</body>
 </html>
