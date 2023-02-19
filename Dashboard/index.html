@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clique</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navigation">
+           <ul>
+            <li>
+                <a href="#">
+                    <span class="icon"> <ion-icon name="calendar-number-outline"></ion-icon></span>
+                    <span class="title"><h2>Clique</h2></span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                    <span class="title">Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><ion-icon name="people-outline"></ion-icon></span>
+                    <span class="title">Friends</span>
+                </a>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="calendar-outline"></ion-icon></span>
+                        <span class="title">Calendar</span>
+                    </a>
+                </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><ion-icon name="chatbubbles-outline"></ion-icon></span>
+                            <span class="title">Messages</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><ion-icon name="person-circle-outline"></ion-icon></span>
+                            <span class="title">Account</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><ion-icon name="cog-outline"></ion-icon></span>
+                            <span class="title">Settings</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                            <span class="title">Log Out</span>
+                        </a>
+                    </li>
+                </a>
+            </li>
+           </ul>
+        </div>
+
+        <!--main-->
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+                <!--search-->
+                <div class="search">
+                    <label>
+                        <input type="text" placeholder="Search">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </label>
+                </div>
+                <!--userImg-->
+                <div class="user">
+                   <img src="Images/user.png">
+                </div>
+            </div>
+
+            <!--cards-->
+            <div class="cardBox">
+                <div class="card">
+                    <div>
+                        <div class="numbers">98</div>
+                        <div class="cardName">Every Activity</div>
+                    </div>
+                    <div class="iconBx">
+                        <ion-icon name="fast-food-outline"></ion-icon>
+                        <ion-icon name="bicycle-outline"></ion-icon>                    </div>
+                </div>  
+                <div class="card">
+                    <div>
+                        <div class="numbers">Plan</div>
+                        <div class="cardName">Plan an Activity</div>
+                    </div>
+                    <div class="iconBx">
+                        <ion-icon name="pencil-outline"></ion-icon>                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="numbers">17</div>
+                        <div class="cardName">Unread Messages</div>
+                    </div>
+                    <div class="iconBx">
+                        <ion-icon name="mail-outline"></ion-icon>                    </div> 
+                </div>     
+                <div class="card">
+                    <div>
+                        <div class="numbers">$20.00</div>
+                        <div class="cardName">This Week's Budget</div>
+                    </div>    
+                    <div class="iconBx">
+                        <ion-icon name="wallet-outline"></ion-icon>                    </div>
+                </div>  
+            </div>     
+
+           
+            <div class="details">
+                <!--order details list-->
+                <div class="recentActivities">
+                    <div class="cardHeader">
+                        <h2>Recent Activity</h2>
+                        <a href="#" class="btn"> View All</a>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Friend</td>
+                                <td>Activity</td>
+                                <td>Payments</td>
+                                <td>Status</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Man Friend</td>
+                                <td>Lunch</td>
+                                <td>Paid</td>
+                                <td><span class="status online"> Online</span></td>
+                            </tr>
+                            <tr>
+                                <td>Woman Friend</td>
+                                <td>--</td>
+                                <td>--</td>
+                                <td><span class="status pending"> Pending
+                                </span></td>
+                            </tr>
+                            <tr>
+                                <td>Man Friend</td>
+                                <td>Movies</td>
+                                <td>Paid</td>
+                                <td><span class="status offline"> Offline</span></td>
+                            </tr>
+                            <tr>
+                                <td>Woman Friend</td>
+                                <td>Swimming</td>
+                                <td>Paid</td>
+                                <td><span class="status away">Away</span></td>
+                            </tr>
+                            <tr>
+                                <td>Man Friend</td>
+                                <td>Dinner</td>
+                                <td>Paid</td>
+                                <td><span class="status online"> Online</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!--Friend List?-->
+                <div class="friendList">
+                    <div class="cardHeader">
+                        <h2>Friends</h2>
+                        <a href="#" class="btn"> View All</a>
+                    </div>
+                    <table>
+                        <tr>
+                            <td width="60px"><div class="imgBx"><img src="Images/man.png"></div></div></td>
+                            <td><h4>Man<br><span>Friend</span></h4></td>
+                            <tr>
+                                <td width="60px"><div class="imgBx"><img src="Images/man.png"></div></div></td>
+                                <td><h4>Man<br><span>Friend</span></h4></td>
+                            </tr>
+                            <tr>
+                                <td width="60px"><div class="imgBx"><img src="Images/man.png"></div></div></td>
+                                <td><h4>Man<br><span>Friend</span></h4></td>
+                            </tr>
+                            <tr>
+                                <td width="60px"><div class="imgBx"><img src="Images/businesswoman.png"></div></div></td>
+                                <td><h4>Woman<br><span>Friend</span></h4></td>
+                            </tr>
+                            <tr>
+                                <td width="60px"><div class="imgBx"><img src="Images/businesswoman.png"></div></div></td>
+                                <td><h4>Woman<br><span>Friend</span></h4></td>
+                            </tr>
+                            <tr>
+                                <td width="60px"><div class="imgBx"><img src="Images/businesswoman.png"></div></div></td>
+                                <td><h4>Woman<br><span>Friend</span></h4></td>
+                            </tr>
+                        </tr>
+                    </table>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        //MenuToggle
+        let toggle = document.querySelector('.toggle');
+        let navigation = document.querySelector('.navigation');
+        let main = document.querySelector('.main');
+
+        toggle.onclick = function(){
+            navigation.classList.toggle('active');
+            main.classList.toggle('active');
+        }
+
+
+
+
+        let list = document.querySelectorAll('.navigation li a');
+        function activeLink() {
+            list.forEach((item) => 
+            item.classList.remove('hovered'));
+            this.classList.add('hovered')      
+            }
+            list.forEach((item) =>
+            item.addEventListener('mouseover',activeLink));
+            
+    </script>
+</body>
+</html>
