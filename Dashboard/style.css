@@ -267,7 +267,7 @@ body{
     min-height: 500px;
     background: var(--white);
     padding: 20px;
-    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 7px 25px rgba(0, 0, 0, .15);
     border-radius: 20px;
 }
 
@@ -331,92 +331,7 @@ body{
     text-align: center;
 }
 
-.status.online{
-    padding: 2px 4px;
-    background: #8de02c;
-    color: var(--white);
-    border-radius: 4px;
-    font-size: 14px;
-    font-weight: 500;
-}
 
-.status.pending{
-    padding: 2px 4px;
-    background: #f9ca3f;
-    color: var(--white);
-    border-radius: 4px;
-    font-size: 14px;
-    font-weight: 500;
-}
-
-.status.offline{
-    padding: 2px 4px;
-    background: #f00;
-    color: var(--white);
-    border-radius: 4px;
-    font-size: 14px;
-    font-weight: 500;
-}
-
-.status.away{
-    padding: 2px 4px;
-    background: var(--grey);
-    color: var(--white);
-    border-radius: 4px;
-    font-size: 14px;
-    font-weight: 500;
-}
-
-.friendList{
-    position: relative;
-    display: grid;
-    min-height: 500px;
-    padding: 20px;
-    background: var(--white);
-    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
-    border-radius: 20px;
-}
-
-.friendList .imgBx{
-    position: relative;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    overflow: hidden;
-}
-
-.friendList .imgBx img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.friendList table tr:hover{
-    background: var(--blue);
-    color: var(white);
-}
-
-.friendList table tr td{
-    padding: 12px 10px;
-}
-
-.friendList table tr td h4{
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.2em;
-}
-
-.friendList table tr td h4 span{
-    font-size: 14px;
-    color: var(--black2);
-}
-
-.friendList table tr:hover td h4 span{
-    color: var(--white);
-}
 
 @media (max-width: 991px)
 {
